@@ -1,0 +1,175 @@
+1. Change Directory
+Command: cd
+
+What it does: This command will change the directory that you’re currently working with in the Terminal in order to execute other commands on a different directory, view the contents of a different directory or open a file in a different directory. This is a very common command that will be used when working with the CLI. If you ever lose your place and which directory you’re in, type pwd (print working directory) and press Return to echo the current path.
+
+Example: cd “path/to/directory/” (Figure A)
+
+Figure A
+
+
+2. Listing Directory
+Command: ls
+
+What it does: Use this command after navigating into a directory using the cd command to view the contents (files and directories) inside of the current directory. Use the argument -l (ls -l) to get even more information about each of the files, including the permissions, owner and date created.
+
+Example: ls “path/to/directory/” (Figure B)
+
+Figure B
+
+
+3. Open files
+Command: open
+
+What it does: When browsing a directory, you may encounter a file that you wish to open on your Mac. That’s where the open command comes in. Typing this command followed by a space and the filename will open the file with the app that can open that file type on the Mac. When typing the filename, you don’t need to type the full name, partially type what you can, then press tab to autocomplete the remaining text.
+
+Example: open “filename” (Figure C)
+
+Figure C
+
+
+4. Copy a file to another directory
+Command: cp
+
+What it does: This command facilitates copying a file from one location to another, or just simply making a copy of the same file with a new name. When specifying the first argument, include the originating file that you wish to copy followed by a space and a full path, filename and extension of where you want the copy to be placed when the command is executed. The Terminal will return when the copy has been completed.
+
+Example: cp “filename” “newfilename” (Figure D)
+
+Figure D
+
+
+5. Move a file
+Command: mv
+
+What it does: When you don’t want to copy a file, but instead move it, use the same format of the cp command, but instead replace ‘cp’ with ‘mv’. This will perform a file move from one location to another, removing the file from the original location and putting it into the new location.
+
+Example: mv “filename” “path/to/new/file/location” (Figure E)
+
+Figure E
+
+
+6. Create a text file
+Command: touch
+
+What it does: The touch command allows you to create any type of file, but it’s blank. After you create the blank file, you can open it in a text editor by typing open [filename].
+
+Example: touch myfile.txt (Figure F)
+
+Figure F
+
+
+7. Create a directory
+Command: mkdir
+
+What it does: This command will allow you to create a directory (folder) right from the CLI. When you need a place to store new files, just use this command to add a new directory in the current working directory, or specify a full path to the location where you want the new directory to be placed.
+
+Example: mkdir “path/to/new/directory” (Figure G)
+
+Figure G
+
+
+8. Remove an empty directory
+Command: rmdir
+
+What it does: When you’ve created a folder that has the wrong name, you can easily use the mv command to rename it, or if you want to remove a directory altogether, use the rmdir command followed by the path to the directory.
+
+Example: rmdir “path/to/directory” (Figure H)
+
+Figure H
+
+
+9. Remove nested directories
+Command: rm -R
+
+What it does: When you want to remove an entire directory that might contain other directories or files, then the rm -R command is where you will turn. This command is irreversible, (unlike deleting files in the Finder and being able to restore them from the Trash). When this command is executed, all files and directories inside of the path you specify will be deleted immediately.
+
+Example: rm -R “/path/to/root/directory” (Figure I)
+
+Figure I
+
+
+10. Execute commands with superuser privileges
+Command: sudo
+
+What it does: sudo (or super user do) is a command that allows you to elevate your user privileges while executing the command to administrator privileges. This is required for some commands to run —for instance removing a file that is owned by another user. When you run this command, you will see a password field appear in the Terminal where you will need to type your user account password to finish the command execution.
+
+Example: sudo “command” (Figure J)
+
+Figure J
+
+
+11. List actively running computer processes
+Command: top
+
+What it does: You’ll see the stats of your system updated in the Terminal window, including the memory, CPU and disk utilization. You’ll also see a running list of the top apps using the CPU and their state, ports used, memory per app and more, without needing to open the Activity Monitor app on your Mac. This command will execute until you close the Terminal window or press Control + C to return execution back to the CLI.
+
+Example: top (Figure K)
+
+Figure K
+
+
+12. Quit sub-screen and return to Terminal
+Command: q
+
+What it does: For commands that run in perpetuity when executed, you can end execution of the process by pressing the q key on your keyboard. Alternatively you can also press Control+C.
+
+Example: After executing a command, such as top to view active processes, press “q” to exit. (Figure L)
+
+Figure L
+
+
+13. Clear the Terminal screen of all previous commands
+Command: Clear
+
+What it does: It removes all previously typed commands from the Terminal view and gives you back a clean slate to work from. Instead of typing clear, you can also alternatively press Command+K to perform the same action.
+
+Example: clear (Figure M)
+
+Figure M
+
+
+14. Copy contents of a folder to a new folder
+Command: ditto
+
+What it does: The ditto command will execute a copy of all of the contents of one folder into another folder that you specify. This is great for when you need to start a new project and use an older project as a base, or just copy files in a folder from your computer to an external drive. Add a -V as in the example below to get verbose output for each file copied.
+
+Example: ditto -V MyFolder MyNewFolder (Figure N)
+
+Figure N
+
+
+15. Get one-line description for a command
+Command: whatis
+
+What it does: When you want to get a short description of a command and what it does on your Mac, use this command to find out.
+
+Example: whatis “command” (Figure O)
+
+Figure O
+
+
+16. Show manual page for a command
+Command: man
+
+What it does: Most commands in the Terminal ship with a manual that allows you to get help or look up arguments and other information on what a command does. Use this man command when you want to find more information about a particular command.
+
+Example: man “command” (Figure P)
+
+Figure P
+
+
+17. The “exit” command
+Command: exit
+
+What it does: This command will close out the current session in the Terminal. You can also simply close the window, but that may not be possible when you’re using SSH through Terminal to access a remote machine. In this instance, you’ll want to use exit to hang up that remote connection before closing the window.
+
+Example: exit (Figure Q)
+
+Figure Q
+
+
+What are your go-to Terminal commands?
+While this article is more focused on those new to macOS or perhaps coming from another OS such as Windows, I hope that even experienced users will be able to reinforce their knowledge base.
+
+What Terminal commands do you use most often? What Terminal commands would you add to this list? We’d love to hear from you!
+
