@@ -1,4 +1,4 @@
-# Example showing how to do For loops in python sd
+# Example showing how to do For loops in python 
 
 def One(): #For statement that starts at 0, ends at 9 and increases by 1 each time
     for x in range(10):
